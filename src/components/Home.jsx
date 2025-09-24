@@ -18,7 +18,7 @@ const Home = ({ apikey }) => {
     setResult(null);
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${place}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${place}&aqi=no`
       );
       if (!response.ok) {
         setError("Place not found.");
